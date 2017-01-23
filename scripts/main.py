@@ -804,12 +804,15 @@ def shuffle_policy_pile(game):
         game.board.discards = []
         bot.send_message(game.cid, "There were not enough cards left on the policy pile so I shuffled the rest with the discard pile!")
 
-while True:
-    try:
-        bot.polling(none_stop=True)
-    except requests.exceptions.ReadTimeout as e:
-        print >> sys.stderr, str(e)
-        sleep(5)
-    except requests.exceptions.ConnectionError as e:
-        print >> sys.stderr, str(e)
-        sleep(5)
+if __name__ == "__main__":
+    while True:
+        try:
+            bot.polling(none_stop=True)
+        except requests.exceptions.ReadTimeout as e:
+    	    log.error('ReadTimeout')
+            print >> sys.stderr, str(e)
+            sleep(10)
+        except requests.exceptions.ConnectionError as e:
+    	    log.error('ConnectionError')
+            print >> sys.stderr, str(e)
+            sleep(10)
