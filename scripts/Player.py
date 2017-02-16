@@ -1,5 +1,3 @@
-from random import getrandbits, choice
-
 class Player(object):
     def __init__(self, name, uid):
         self.name = name

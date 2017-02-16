@@ -1,6 +1,4 @@
 from random import shuffle
-from Player import Player
-
 
 class Game(object):
     def __init__(self, cid, initiator):

@@ -1,6 +1,7 @@
 __author__ = "Julian Schrittwieser"
 
 players = {
+    # only for testing purposes
     3: {
         "roles": [
             "Liberal",
@@ -16,6 +17,7 @@ players = {
             "win"
         ]
     },
+    # only for testing purposes
     4: {
         "roles": [
             "Liberal",
@@ -170,6 +172,3 @@ pile = [
         "fascist",
         "fascist"
     ]
-
-TOKEN = "ENTER_YOUR_TOKEN_HERE"
-ADMIN = "01234" # ENTER YOUR TELEGRAM ID HERE
